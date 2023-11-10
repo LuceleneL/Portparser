@@ -1,4 +1,14 @@
-This repository has all the files used in the paper "Towards Portparser -- a highly accurate parsing system for Brazilian Portuguese following the Universal Dependencies framework".
+# Portparser
+
+This repository has all the files used in the paper "[Towards Portparser -- a highly accurate parsing system for Brazilian Portuguese following the Universal Dependencies framework]()".
+
+This paper presents a parsing model -- whose corresponding system is named Portparser -- for Brazilian Portuguese, which outperforms current systems for this language.
+Following the Universal Dependencies (UD) framework, we build our model by using a manually annotated corpus ([Porttinari-base](https://sites.google.com/icmc.usp.br/poetisa/porttinari)) for training.
+We test different parsing methods and explore parameter settings in order to propose a highly accurate model, encompassing not only the dependency annotation, but also the Part of Speech tagging and the identification of lemmas and the related morphological features.
+Our experiments show that our best model achieves around 99\% accuracy for Part of Speech tagging, lemma, and morphological features, with around 95\% for dependency annotation, surpassing known systems for Portuguese by up to 7\% accuracy.
+Furthermore, we conduct an error analysis of the proposed model to show the current limitations and challenges for future works.
+
+## File Structure
 
 These files in the following directories:
 - Portparser_model - the model proposed in the paper to be used with UDPipe 2;
@@ -9,4 +19,8 @@ These files in the following directories:
         - corresponding to the set ZZZZ ("train", "dev", or "test").
         For instance the file "h8418_3_test.conllu" correspond to a model taken from the corpus with 8,418 sentences, it is the random version 3, and it is the test set of the experiments.
     - hXXXX_Y_ZZZZ.npz is the word embeddings for bert-large-portuguese-cased (BERTimbau) corresponding to the .conllu file with the same name. Note that the embeddings are only needed for the "8418" versions of the train and dev sets.
+
+# Acknowledgments
+
+This work was carried out at the Center for Artificial Intelligence of the University of São Paulo (C4AI - [http://c4ai.inova.usp.br/](http://c4ai.inova.usp.br/)), with support by the São Paulo Research Foundation (FAPESP grant #2019/07665-4) and by the IBM Corporation. The project was also supported by the Ministry of Science, Technology and Innovation, with resources of Law N. 8.248, of October 23, 1991, within the scope of PPI-SOFTEX, coordinated by Softex and published as Residence in TIC 13, DOU 01245.010222/2022-44.
 
