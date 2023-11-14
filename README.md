@@ -1,5 +1,4 @@
 # Portparser
-
 This repository has all the files used in the paper "[Towards Portparser -- a highly accurate parsing system for Brazilian Portuguese following the Universal Dependencies framework]()".
 
 This paper presents a parsing model -- whose corresponding system is named Portparser -- for Brazilian Portuguese, which outperforms current systems for this language.
@@ -9,8 +8,7 @@ Our experiments show that our best model achieves around 99\% accuracy for Part 
 Furthermore, we conduct an error analysis of the proposed model to show the current limitations and challenges for future works.
 
 ## File Structure
-
-These files in the following directories:
+The files are stored in the following directories:
 - Portparser_model - the model proposed in the paper to be used with UDPipe 2;
 - datasets - a directory holding all datasets used in the paper (.conllu), plus the generated word embeddings necessary for the BERTimbau experiments (.npz files), and the name of files inside this directory follow this naming structure:
     - hXXXX_Y_ZZZZ.conllu stands for the CoNLL-U file used for
@@ -21,6 +19,5 @@ These files in the following directories:
     - hXXXX_Y_ZZZZ.npz is the word embeddings for bert-large-portuguese-cased (BERTimbau) corresponding to the .conllu file with the same name. Note that the embeddings are only needed for the "8418" versions of the train and dev sets.
 
 # Acknowledgments
-
 This work was carried out at the Center for Artificial Intelligence of the University of São Paulo (C4AI - [http://c4ai.inova.usp.br/](http://c4ai.inova.usp.br/)), with support by the São Paulo Research Foundation (FAPESP grant #2019/07665-4) and by the IBM Corporation. The project was also supported by the Ministry of Science, Technology and Innovation, with resources of Law N. 8.248, of October 23, 1991, within the scope of PPI-SOFTEX, coordinated by Softex and published as Residence in TIC 13, DOU 01245.010222/2022-44.
 
