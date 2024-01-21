@@ -9,7 +9,7 @@ To use this model with UDPipe 2 you need to:
 - install UDPipe 2 in your machine - see the requirements and instructions at [UDPipe 2 page](https://ufal.mff.cuni.cz/udpipe/2);
 - copy the directory `Portparser_model` to the same location of your UDPipe 2 code file (`udpipe2.py`);
 - run UDPipe 2 over your CoNLL-U file (UDPipe 2 does not perform tokenization) with the command:
-    - `python udpipe2.py Portparser_model --predict --predict_input your.conllu --predict_output _predicted.conllu`
+    - `python udpipe2.py Portparser_model --predict --predict_input your.conllu --predict_output your_predicted.conllu`
 
 # Paper Summary
 This paper presents a parsing model -- whose corresponding system is named Portparser -- for Brazilian Portuguese, which outperforms current systems for this language.
