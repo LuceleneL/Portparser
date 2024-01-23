@@ -1,5 +1,5 @@
 # Portparser
-This repository has all the files used in the paper "[Towards Portparser -- a highly accurate parsing system for Brazilian Portuguese following the Universal Dependencies framework]()".
+This repository has all the files used in the paper "[Towards Portparser -- a highly accurate parsing system for Brazilian Portuguese following the Universal Dependencies framework]()", including the proposed model that can be used to parser Portuguese texts.
 
 # The Proposed Model
 One of the main contributions of this paper is the proposed model to annotate Portuguese texts using UDPipe 2.
