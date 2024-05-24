@@ -27,9 +27,9 @@ The files are stored in the following directories:
         - the random model numbered `Y` (`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, or `9`), and
         - corresponding to the set `ZZZZ` (`train`, `dev`, or `test`).
         For instance the file `h8418_3_test.conllu` correspond to a model taken from the corpus with 8,418 sentences, it is the random version 3, and it is the test set of the experiments.
-    - `hXXXX_Y_ZZZZ.npz` is the word embeddings for bert-base-portuguese-cased (BERTimbau) * corresponding to the `.conllu` file with the same name. Note that the embeddings are only needed for the `8418` versions of the `train` and `dev` sets.
+    - `hXXXX_Y_ZZZZ.npz` is the word embeddings for bert-base-portuguese-cased (BERTimbau) **\*** corresponding to the `.conllu` file with the same name. Note that the embeddings are only needed for the `8418` versions of the `train` and `dev` sets.
 
-\* In the paper, the text mentions bert-large-portuguese-cased, but it should state bert-base-portuguese-cased.
+**\*** In the paper, the text mentions bert-large-portuguese-cased, but it should state bert-base-portuguese-cased.
 
 # Acknowledgments
 This work was carried out at the Center for Artificial Intelligence of the University of São Paulo (C4AI - [http://c4ai.inova.usp.br/](http://c4ai.inova.usp.br/)), with support by the São Paulo Research Foundation (FAPESP grant #2019/07665-4) and by the IBM Corporation. The project was also supported by the Ministry of Science, Technology and Innovation, with resources of Law N. 8.248, of October 23, 1991, within the scope of PPI-SOFTEX, coordinated by Softex and published as Residence in TIC 13, DOU 01245.010222/2022-44.
