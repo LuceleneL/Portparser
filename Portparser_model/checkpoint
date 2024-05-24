@@ -1,2 +1,2 @@
-model_checkpoint_path: "/content/drive/MyDrive/UDPipe2/datasets/mb8020f3/weights"
-all_model_checkpoint_paths: "/content/drive/MyDrive/UDPipe2/datasets/mb8020f3/weights"
+model_checkpoint_path: "Portparser_model/weights"
+all_model_checkpoint_paths: "Portparser_model/weights"
