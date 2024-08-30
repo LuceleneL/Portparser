@@ -9,6 +9,7 @@ An implementation of this model is available in an online interface at the addre
 This model is also available here and it is composed by the contents of the directory [Portparser_model](https://github.com/LuceleneL/Portparser/tree/main/Portparser_model).
 To use this model with UDPipe 2 you need to:
 - install UDPipe 2 in your machine - see the requirements and instructions at [UDPipe 2 page](https://ufal.mff.cuni.cz/udpipe/2);
+- replace the file `wembeddings.py` at the directory `udpipe2/wembeddings_service/wembeddings/` by the edited file `wembeddings.py` in this repository;
 - copy the directory `Portparser_model` to the same location of your UDPipe 2 code file (`udpipe2.py`);
 - run UDPipe 2 over your CoNLL-U file (UDPipe 2 does not perform tokenization) with the command:
     - `python udpipe2.py Portparser_model --predict --predict_input your.conllu --predict_output your_predicted.conllu`
