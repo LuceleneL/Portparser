@@ -4,7 +4,7 @@ This repository has all the files used in the paper "[Towards Portparser -- a hi
 # The Proposed Model
 One of the main contributions of this paper is the proposed model to annotate Portuguese texts using UDPipe 2.
 
-An implementation of this model is available in an online interface at the address: http://portparser.icmc.usp.br:8082.
+An implementation of the second version of this model is available in the following repository: [https://github.com/LuceleneL/Portparser.v2](https://github.com/LuceleneL/Portparser.v2).
 
 This model is also available here and it is composed by the contents of the directory [Portparser_model](https://github.com/LuceleneL/Portparser/tree/main/Portparser_model).
 To use this model with UDPipe 2 you need to:
@@ -31,6 +31,11 @@ The files are stored in the following directories:
         - corresponding to the set `ZZZZ` (`train`, `dev`, or `test`).
         For instance the file `h8418_3_test.conllu` correspond to a model taken from the corpus with 8,418 sentences, it is the random version 3, and it is the test set of the experiments.
     - `hXXXX_Y_ZZZZ.npz` is the word embeddings for bert-base-portuguese-cased (BERTimbau) **\*** corresponding to the `.conllu` file with the same name. Note that the embeddings are only needed for the `8418` versions of the `train` and `dev` sets.
+
+The more accurate model was the random model with 8418 sentences numbered as 3, therefore to download the files for the best model the files are:
+- h8418_3_train.conllu
+- h8418_3_dev.conllu
+- h8418_3_test.conllu
 
 **\*** In the paper, the text mentions bert-large-portuguese-cased, but it should state bert-base-portuguese-cased.
 
